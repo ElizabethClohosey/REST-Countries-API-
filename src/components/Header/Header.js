@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FaRegMoon } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.css";
 import "./header.scss";
 
 const toggleDarkMode = () => {
@@ -10,13 +12,18 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Where in the world</h1>
-        <div className="dark-toggle">
-          <button className="theme-toggle" onClick={toggleDarkMode}>
-            <p>Icon</p>
-            <h2>Dark Mode</h2>
-          </button>
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-5">
+              <h1>Where in the world</h1>
+            </div>
+            <div className="col-2 theme-toggle text-right" onClick={toggleDarkMode}>
+          <FaRegMoon className="moon-icon" />
+          Dark Mode
         </div>
+          </div>
+        </div>
+
       </header>
     );
   }
