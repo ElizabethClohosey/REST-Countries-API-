@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import Actions from "./components/Actions/actions";
+import SearchResults from "./components/Search-results/search-results";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.scss";
 
@@ -9,9 +10,9 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <div className="container">
+        <div className="main-container">
           <Actions />
-          {/* <SearchResults /> */}
+          <SearchResults />
         </div>
       </main>
     </div>

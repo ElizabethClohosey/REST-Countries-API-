@@ -1,24 +1,31 @@
-@import "../../styles/variables"; 
-
-
+@import "../../styles/variables";
 
 header {
   // box-shadow: 0 0 5px $lightModeInput;
 
+  padding: 1rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    text-align: right;
+  }
+  
   .moon-icon {
     margin-right: 1rem;
     font-size: 30px;
     transform: rotate(-30deg);
   }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.theme-toggle {
-  display: flex;
-  align-items: center;
-}
-
-
-// Light Mode Styles 
+// Light Mode Styles
 body {
   background: $lightModeBg;
 
@@ -32,7 +39,7 @@ body {
   }
 }
 
-// Dark Mode Styles 
+// Dark Mode Styles
 body.dark-mode {
   background: blue;
 

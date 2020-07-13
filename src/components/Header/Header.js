@@ -12,18 +12,20 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <div className="container">
+        <div className="header-container">
           <div className="row justify-content-between">
-            <div className="col-5">
+            <div className="col-5 p-0">
               <h1>Where in the world</h1>
             </div>
-            <div className="col-2 theme-toggle text-right" onClick={toggleDarkMode}>
-          <FaRegMoon className="moon-icon" />
-          Dark Mode
-        </div>
+            <div
+              className="col-2 theme-toggle text-right p-0"
+              onClick={toggleDarkMode}
+            >
+              <FaRegMoon className="moon-icon ml-auto" />
+              <p class="my-auto">Dark Mode</p>
+            </div>
           </div>
         </div>
-
       </header>
     );
   }

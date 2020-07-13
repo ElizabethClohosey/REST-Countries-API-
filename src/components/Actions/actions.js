@@ -12,7 +12,7 @@ class Actions extends Component {
   render() {
     return (
       <section className="actions">
-        <div className="container">
+        <div className="action-container">
           <div className="row justify-content-between">
             <div className="col-6">
               <GoSearch class="search-icon"/>

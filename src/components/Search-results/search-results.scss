@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.country-info {
+  border: 1px solid red;
+
+  img {
+    // border: 2px solid purple;
+    height: 200px;
+    width: 100%;
+    padding: 4rem 7.55rem;
+  }
+
+  .info-body {
+    border: 2px solid green;
+    padding: 2rem;
+  }
+
+  .country-name {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
+}
